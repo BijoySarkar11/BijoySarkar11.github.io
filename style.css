@@ -76,13 +76,6 @@ ul { list-style: none; }
     /* This adds subtle dots to the background for a "tech" feel */
     background-image: radial-gradient(#ccc 1px, transparent 1px);
     background-size: 30px 30px; /* Space between dots */
-    
-    /* 2. THE PARTITION (Shelf Effect) */
-    /* A thick colored line + a shadow to separate it from the next section */
-    border-bottom: 5px solid var(--primary);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05); /* Floats the hero above the next section */
-    position: relative;
-    z-index: 2; /* Ensures shadow sits on top of About section */
 }
 
 .hero-content {
