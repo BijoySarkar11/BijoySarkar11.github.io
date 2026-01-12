@@ -3,236 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bijoy Sarkar - Robotics & CS Enthusiast</title>
+    <title>Bijoy Sarkar | Robotics & CS Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Scroll to top button -->
-    <button class="scroll-top" id="scrollTop">↑</button>
 
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <div class="logo-icon">🤖</div>
-                <span>Bijoy Sarkar</span>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link">HOME</a></li>
-                <li><a href="#about" class="nav-link">ABOUT</a></li>
-                <li><a href="#skills" class="nav-link">SKILLS</a></li>
-                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
-                <li><a href="#contact" class="nav-link">CONTACT</a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="logo">Bijoy<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="hero-text fade-in">
-                <h1>Hello, I'm Bijoy Sarkar</h1>
-                <h2>Robotics & Computer Science Enthusiast</h2>
-                <p>Passionate about combining programming and robotics to solve real-world challenges. Currently learning ROS 2 and exploring robotics development with a focus on robot control, automation, and communication systems.</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
+            <h4>Hello, I am Bijoy Sarkar</h4>
+            <h1>ROBOTICS & <br><span>AUTOMATION</span></h1>
+            <p>Building reliable and intelligent robotic systems with ROS 2, C++, and Python.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary">Contact Me</a>
+                <a href="#about" class="btn-secondary">About Me</a>
             </div>
-            <div class="hero-image fade-in">
-                <div class="profile-img">🤖</div>
-            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Robotics">
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Get to know more about my journey and passion</p>
-        <div class="about-content">
+    <section id="about" class="section-padding">
+        <div class="container split-layout">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a782?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Working on hardware">
+            </div>
             <div class="about-text">
-                <p>
-                    I'm a robotics and computer science enthusiast with a strong foundation in C/C++ and Python programming. My journey in technology is driven by a passion for creating intelligent systems that can interact with and improve the world around us.
-                </p>
-                <p>
-                    Currently, I'm expanding my expertise by learning ROS 2, focusing on advanced robot control systems, automation frameworks, and communication protocols. I thrive on tackling complex challenges and transforming innovative ideas into functional robotic solutions.
-                </p>
-                <p>
-                    Through hands-on projects and continuous learning, I aim to bridge the gap between software engineering and robotics, creating systems that are not only technically sophisticated but also practical and impactful.
-                </p>
-            </div>
-            <div class="about-image">
-                <div class="about-img-wrapper">
-                    <div class="about-img">🎯</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">Skills & Technologies</h2>
-        <p class="section-subtitle">Technical expertise and tools I work with</p>
-        <div class="skills-container">
-            <div class="skill-category">
-                <div class="skill-icon">💻</div>
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Python</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <div class="skill-icon">🤖</div>
-                <h3>Robotics & Automation</h3>
-                <ul>
-                    <li>ROS 2 (learning)</li>
-                    <li>Robot Control</li>
-                    <li>Communication Systems</li>
-                    <li>Motor and Sensor Integration</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <div class="skill-icon">⚡</div>
-                <h3>Embedded Systems</h3>
-                <ul>
-                    <li>ESP32</li>
-                    <li>Microcontrollers</li>
-                    <li>Motor Drivers</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <div class="skill-icon">🛠️</div>
-                <h3>Software & Tools</h3>
-                <ul>
-                    <li>Proteus</li>
-                    <li>Arduino IDE</li>
-                    <li>Simulation Tools</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <div class="skill-icon">🧠</div>
-                <h3>Core Concepts</h3>
-                <ul>
-                    <li>Algorithms</li>
-                    <li>Data Structures</li>
-                    <li>Problem-Solving</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-subtitle">Explore my latest robotics and software projects</p>
-        
-        <div class="project-filters">
-            <button class="filter-btn active">ALL</button>
-            <button class="filter-btn">ROBOTICS</button>
-            <button class="filter-btn">SOFTWARE</button>
-            <button class="filter-btn">SIMULATION</button>
-        </div>
-
-        <div class="projects-container">
-            <div class="project-card">
-                <div class="project-img">🤖</div>
-                <div class="project-content">
-                    <h3>Mongol Barota Team – Mini Rover</h3>
-                    <p>Developed a mini rover capable of picking and placing objects, with full control over wheels and robotic arm via a controller. Worked on robot control, automation, and communication systems.</p>
-                    <div class="project-tags">
-                        <span class="tag">ESP32</span>
-                        <span class="tag">C/C++</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Robotics</span>
+                <h2>About Me</h2>
+                <div class="yellow-line"></div>
+                <p>I’m a robotics and computer science enthusiast with experience in C/C++ and Python. I’m currently learning ROS 2 and exploring robotics development with a strong focus on robot control, automation, and advanced communication systems.</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <h4>Languages</h4>
+                        <p>C, C++, Python, Java</p>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/BijoySarkar11" target="_blank">GitHub →</a>
-                        <a href="#" target="_blank">Live Demo →</a>
+                    <div class="skill-item">
+                        <i class="fas fa-microchip"></i>
+                        <h4>Embedded</h4>
+                        <p>ESP32, Jetson Orin, RPi</p>
                     </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-img">🦾</div>
-                <div class="project-content">
-                    <h3>Robotic Arm Simulation</h3>
-                    <p>Simulated a robotic arm in Proteus, controlled via ESP32 programming. Focused on precision control and movement coordination.</p>
-                    <div class="project-tags">
-                        <span class="tag">ESP32</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">Proteus</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/BijoySarkar11" target="_blank">GitHub →</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-img">🏥</div>
-                <div class="project-content">
-                    <h3>Digital Health Passport System</h3>
-                    <p>Developed a digital patient record system managing visits, tests, and reminders to streamline healthcare management.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Database</span>
-                        <span class="tag">Management System</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/BijoySarkar11" target="_blank">GitHub →</a>
+                    <div class="skill-item">
+                        <i class="fas fa-robot"></i>
+                        <h4>Robotics</h4>
+                        <p>ROS 2, Sensors, Control</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Let's connect and discuss opportunities</p>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <a href="mailto:your.email@example.com">your.email@example.com</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <h3>Phone</h3>
-                    <a href="tel:+1234567890">+123 456 7890</a>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <h3>Location</h3>
-                    <p>Dhaka, Bangladesh</p>
-                </div>
+    <section id="experience" class="dark-section section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience</h2>
+                <p>Mongol Barota Team – AuroraX Rover</p>
             </div>
-            <div class="social-links">
-                <a href="https://github.com/BijoySarkar11" target="_blank" title="GitHub">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                </a>
-                <a href="https://linkedin.com/in/your-profile" target="_blank" title="LinkedIn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                </a>
+            
+            <div class="experience-card">
+                <div class="exp-icon">
+                    <i class="fas fa-satellite-dish"></i>
+                </div>
+                <div class="exp-details">
+                    <h3>Communication Sub-team Member</h3>
+                    <p>Contributed to the development of the AuroraX Rover. Worked with NVIDIA Jetson Orin SBCs, fisheye cameras, and multiple antenna systems.</p>
+                    <ul>
+                        <li>Designed long-range comms with Yagi & Sector antennas.</li>
+                        <li>Integrated onboard compute units with sensors.</li>
+                        <li>Ensured stable rover operations via wireless links.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header-center">
+                <h2>My Projects</h2>
+                <p>Hardware, Simulation, and Software Development</p>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="p-img">
+                        <img src="https://images.unsplash.com/photo-1535378437327-1e0c70097c0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Rover">
+                    </div>
+                    <div class="p-info">
+                        <span>ESP32 & C++</span>
+                        <h3>Mini Pick-and-Place Rover</h3>
+                        <p>Designed a mini rover with independent wheel control and robotic arm logic.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="p-img">
+                        <img src="https://images.unsplash.com/photo-1611348524140-53c9a25297d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Robotic Arm">
+                    </div>
+                    <div class="p-info">
+                        <span>Proteus & Simulation</span>
+                        <h3>Robotic Arm Simulation</h3>
+                        <p>Simulated a robotic arm controlled via ESP32 programming using Proteus.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="p-img">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Health App">
+                    </div>
+                    <div class="p-info">
+                        <span>Java & OOP</span>
+                        <h3>Digital Health Passport</h3>
+                        <p>System for managing patient records, visits, tests, and reminders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container contact-wrapper">
+            <div class="contact-form-area">
+                <h2>Get In Touch</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Phone Number">
+                    <textarea placeholder="Message" rows="5"></textarea>
+                    <button type="submit" class="btn-primary">SEND</button>
+                </form>
+            </div>
+
+            <div class="contact-info-box">
+                <h3>Contact Info</h3>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>bijoysarkar935@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+880 1875 420 477</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/BijoySarkar11" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/BijoySarkar11/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2026 Bijoy Sarkar. All rights reserved.</p>
+        <p>© 2026 Bijoy Sarkar. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
