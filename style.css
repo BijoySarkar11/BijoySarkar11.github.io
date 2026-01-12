@@ -1,7 +1,12 @@
 /* --- Variables & Reset --- */
+/* --- Variables & Reset --- */
 :root {
-    /* UPDATED COLOR: A warm reddish-orange to match the background image */
-    --primary: #F57C00; 
+    /* NEW COLOR: A deep Tech Teal. 
+       This contrasts beautifully with the warm orange background 
+       and complements your dark blue shirt, making the site look 
+       much sharper and more professional. */
+    --primary: #00bcd4; 
+    
     --dark: #1a1a1a;
     --grey: #f4f4f4;
     --text-color: #333;
@@ -14,6 +19,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/* ... rest of your CSS remains the same ... */
 
 html {
     scroll-behavior: smooth;
@@ -380,16 +387,36 @@ footer span { color: var(--primary); font-weight: 600; }
     .navbar .nav-links { display: none; }
     .hamburger { display: block; }
     
+    /* HERO SECTION FIXES */
     .hero { flex-direction: column-reverse; min-height: auto; }
-    .hero-content { padding: 60px 5%; text-align: center; align-items: center; }
+    .hero-content { padding: 50px 5%; text-align: center; align-items: center; }
     .hero-content p { max-width: 100%; }
-    .hero-image { height: 400px; }
     
+    /* FORCE HERO IMAGE HEIGHT ON MOBILE */
+    /* This ensures the absolute positioned slides have a box to live in */
+    .hero-image { 
+        width: 100%; 
+        height: 350px; 
+        min-height: 350px; 
+    }
+    
+    /* ABOUT SECTION FIXES */
     .section-padding { padding: 60px 5%; }
     .split-layout { flex-direction: column; }
+    
+    /* FORCE ABOUT IMAGE HEIGHT ON MOBILE */
+    /* This was missing in your previous code! */
+    .about-img {
+        width: 100%;
+        height: 350px; 
+        min-height: 350px;
+        margin-bottom: 30px; /* Adds space between image and text */
+    }
+    
     .about-text h2::after { left: 50%; transform: translateX(-50%); }
     .about-text { text-align: center; }
     
+    /* CONTACT FIXES */
     .contact-wrapper { flex-direction: column; }
     .contact-form-area { padding: 40px; }
     .contact-form-area form { grid-template-columns: 1fr; }
