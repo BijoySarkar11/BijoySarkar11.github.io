@@ -466,6 +466,8 @@ footer span { color: var(--primary); font-weight: 600; }
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Aligns with your text */
+    text-decoration: none; 
+    cursor: pointer;
 }
 
 .mouse {
