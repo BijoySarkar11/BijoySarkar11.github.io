@@ -151,12 +151,6 @@ ul { list-style: none; }
     transform: translateY(-2px); /* Slight lift effect */
 }
 
-.btn-secondary:hover {
-    background: var(--primary);
-    border-color: var(--primary);
-    color: var(--white);
-    transform: translateY(-2px);
-}
 
 /* --- About Section --- */
 .section-padding { padding: 100px 5%; }
