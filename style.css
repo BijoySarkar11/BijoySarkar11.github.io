@@ -154,6 +154,7 @@ ul { list-style: none; }
     border: 2px solid var(--dark);
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0,0,0, 0.2);
+    transform: translateY(-2px);
 }
 
 
