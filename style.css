@@ -145,10 +145,10 @@ ul { list-style: none; }
 }
 
 .btn-secondary:hover {
-    background: transparent;   /* Makes the background see-through */
-    color: var(--dark);        /* Text turns black so you can read it */
-    border-color: var(--dark); /* Border remains black */
-    transform: translateY(-2px); /* Slight lift effect */
+    background: transparent;    /* Become see-through */
+    color: var(--dark);         /* Text stays Black */
+    border-color: var(--dark);  /* Border stays Black */
+    transform: translateY(-2px);
 }
 
 
