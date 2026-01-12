@@ -71,6 +71,9 @@ ul { list-style: none; }
     display: flex;
     min-height: 90vh;
     background: var(--white);
+    
+    /* ADD THIS LINE FOR THE PARTITION */
+    border-bottom: 2px solid #e0e0e0; 
 }
 
 .hero-content {
