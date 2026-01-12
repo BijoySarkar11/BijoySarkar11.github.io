@@ -24,3 +24,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+// --- About Section Slideshow Logic ---
+let aboutSlideIndex = 0;
+showAboutSlides();
+
+function showAboutSlides() {
+    let i;
+    // We target "about-slide" specifically so it doesn't mess up the Hero slider
+    let slides = document.getElementsByClassName("about-slide");
+    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    
+    aboutSlideIndex++;
+    if (aboutSlideIndex > slides.length) {aboutSlideIndex = 1}    
+    
+    slides[aboutSlideIndex-1].style.display = "block";  
+    
+    // Change image every 3 seconds
+    setTimeout(showAboutSlides, 3000); 
+}
