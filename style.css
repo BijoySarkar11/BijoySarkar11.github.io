@@ -319,34 +319,27 @@ ul { list-style: none; }
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+.contact-form-area form .full-width { grid-column: 1 / -1; }
 
-/* FIX 1: Make Phone Number (3rd input) Full Width */
-.contact-form-area input:nth-of-type(3) {
-    grid-column: 1 / -1;
-}
-
-/* FIX 2: Make Message Box Full Width & Tall */
-.contact-form-area textarea {
-    grid-column: 1 / -1;
-    resize: none;
-    height: 150px;
-}
-
-/* General Styles */
 .contact-form-area input, .contact-form-area textarea {
-    width: 100%;
     padding: 15px;
     border: 1px solid #eee;
     border-radius: 5px;
     background: #f9f9f9;
     font-size: 14px;
     transition: 0.3s;
+    /* THIS FIXES THE PHONE NUMBER STRETCHING */
+    align-self: start;
 }
-
 .contact-form-area input:focus, .contact-form-area textarea:focus {
     border-color: var(--primary);
     background: #fff;
     outline: none;
+}
+/* --- Add this BELOW your current contact code --- */
+.contact-form-area textarea {
+    resize: none;   /* Disable dragging */
+    height: 150px;  /* Fix the height to look good */
 }
 
 .contact-info-box {
