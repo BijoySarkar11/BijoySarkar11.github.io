@@ -313,13 +313,42 @@ ul { list-style: none; }
     border-radius: 10px;
     overflow: hidden;
 }
+/* NEW CODE TO PASTE */
 
+/* 1. Reset the form to stack vertically */
 .contact-form-area form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
-.contact-form-area form .full-width { grid-column: 1 / -1; }
+
+/* 2. Controls the Name & Email row */
+.input-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* 3. Ensures Inputs inside the group share space equally */
+.input-group input {
+    width: 50%; 
+}
+
+/* 4. Controls Phone and Message width */
+.full-width {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Mobile: Stack Name/Email on small screens */
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+    }
+    .input-group input {
+        width: 100%;
+    }
+}
 
 .contact-form-area input, .contact-form-area textarea {
     padding: 15px;
