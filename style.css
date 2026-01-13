@@ -336,6 +336,8 @@ ul { list-style: none; }
     background: #f9f9f9;
     font-size: 14px;
     transition: 0.3s;
+    /* THIS FIXES THE PHONE NUMBER STRETCHING */
+    align-self: start;
 }
 .contact-form-area input:focus, .contact-form-area textarea:focus {
     border-color: var(--primary);
