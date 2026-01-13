@@ -342,6 +342,11 @@ ul { list-style: none; }
     background: #fff;
     outline: none;
 }
+/* --- Add this BELOW your current contact code --- */
+.contact-form-area textarea {
+    resize: none;   /* Disable dragging */
+    height: 150px;  /* Fix the height to look good */
+}
 
 .contact-info-box {
     flex: 1;
